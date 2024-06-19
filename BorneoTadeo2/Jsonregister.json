@@ -1,0 +1,33 @@
+{
+  "sanos": [
+    {
+      "name": "Luis",
+      "surname": "Funes",
+      "age": 19,
+      "neighborhood": "San jose",
+      "dni": "44890222",
+      "occupation": "Pintor",
+      "kit": {
+        "id": "e32feb14-edff-459f-bde7-690d9dc81eaa"
+      }
+    },
+    {
+      "name": "Miguel",
+      "surname": "Perez",
+      "age": 33,
+      "neighborhood": "Chauvin",
+      "dni": "33700349",
+      "occupation": "Programador",
+      "kit": {
+        "id": "8f811061-2ecd-420c-bf3f-3bff21651822"
+      }
+    }
+  ],
+  "aislar": [
+    {
+      "kit": "28666c03-72e8-4de7-a95c-b6534739819c",
+      "temperature": 39,
+      "neighborhood": "San carlos"
+    }
+  ]
+}
