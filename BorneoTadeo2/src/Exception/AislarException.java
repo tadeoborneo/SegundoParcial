@@ -22,9 +22,13 @@ public class AislarException extends Exception {
         this.neighborhood = neighborhood;
     }
 
-    public AislarException(String message, UUID kitId, String neighborhood) {
-        super(message);
+    public AislarException(UUID kitId, String neighborhood) {
         this.kitId = kitId;
         this.neighborhood = neighborhood;
+    }
+
+    @Override
+    public String getMessage() {
+        return "Risk person";
     }
 }

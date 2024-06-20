@@ -35,14 +35,16 @@ public class Ssm {
             person.setKit(this.getKits().getFirst());
             this.getPersons().add(person);
             this.getKits().removeFirst();
-        } else if (false)//NO HAY MAS TEST
-            throw new OutOfTest("Without stock");
-        else {//HAY MAS TEST
-            for (int i = 0; i < 10; i++) {
-                this.getKits().add(new Kit());
+        } else {
+            if (false)//NO HAY MAS TEST
+                throw new OutOfTest("Without stock");
+            else {//HAY MAS TEST
+                for (int i = 0; i < 10; i++) {
+                    this.getKits().add(new Kit());
+                }
+                person.setKit(this.getKits().getFirst());
+                this.getPersons().add(person);
             }
-            person.setKit(this.getKits().getFirst());
-            this.getPersons().add(person);
         }
     }
 
@@ -58,8 +60,8 @@ public class Ssm {
     public void aislar(PersonRegister personRegister) throws AislarException {
         if (personRegister.getTemperature() >= 38) {
             Person p = searchPersonByDni(personRegister.getDni());
-            if(p != null)
-                throw new AislarException("Risk person", p.getKit().getId(), p.getNeighborhood());
+            if (p != null)
+                throw new AislarException(p.getKit().getId(), p.getNeighborhood());
         }
     }
 
